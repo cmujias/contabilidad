@@ -1,0 +1,18 @@
+[
+  {
+    "id": 8126177,
+    "proveedor": "EIDYKOS( SOFTWARE)",
+    "factura": "FE-2001",
+    "fecha": "2026-03-30",
+    "valor_base": 14215329.4,
+    "iva": 0,
+    "base_iva": 0,
+    "notas_credito": 0,
+    "retencion": 0,
+    "pago_realizado": 120000,
+    "saldo_pendiente": 14095329.4,
+    "dias_mora": 136,
+    "fecha_inicial": "2025-11-14",
+    "created_at": "2026-03-30T18:05:13.643432"
+  }
+]

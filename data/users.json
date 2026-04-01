@@ -1,0 +1,58 @@
+[
+  {
+    "id": "admin-id-root",
+    "username": "admin",
+    "password_hash": "$2b$12$Nye7fc0apkYSO/WWnmQxFOD0/i67/e/leJPTJ423sMZIWU70aopzC",
+    "role": "admin",
+    "empresa_id": null,
+    "modules": [
+      "dashboard",
+      "charts",
+      "table",
+      "payments",
+      "builder"
+    ]
+  },
+  {
+    "id": "user-1-id",
+    "username": "usuario1",
+    "password_hash": "$2b$12$WzasjBRdO3lK/d6w1Gf2g.FSqOhFgAW3lIrD0FmuItbXu71fLnRc2",
+    "role": "user",
+    "empresa_id": "empresa-1-id",
+    "modules": [
+      "dashboard",
+      "charts",
+      "table",
+      "payments",
+      "builder"
+    ]
+  },
+  {
+    "id": "usr_c98e6892",
+    "username": "eduar",
+    "password_hash": "$2b$12$TvUaJNi/nGfWdddOj.Y/qO85obduAaWGfL2zk3WZYauqX27W7f526",
+    "role": "user",
+    "empresa_id": "emp_a120605f",
+    "modules": [
+      "dashboard",
+      "charts",
+      "table",
+      "payments",
+      "builder"
+    ]
+  },
+  {
+    "id": "usr_afe7cab2",
+    "username": "otro",
+    "password_hash": "$2b$12$v4GualFemUjiwlPejMK9wevvsP7k.HtEkF9hJPbMzJ0Fe3i3vx.gG",
+    "role": "user",
+    "empresa_id": "emp_146306c1",
+    "modules": [
+      "dashboard",
+      "charts",
+      "table",
+      "payments",
+      "builder"
+    ]
+  }
+]

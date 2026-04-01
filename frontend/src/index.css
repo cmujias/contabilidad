@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a0f1e;
+    color: #e2e8f0;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-800/60 border border-slate-700/50 rounded-xl backdrop-blur-sm;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:border-blue-500/40 hover:shadow-glow-blue;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg font-medium
+           transition-all duration-200 flex items-center gap-2 text-sm
+           hover:shadow-glow-blue active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-slate-200 px-4 py-2 rounded-lg font-medium
+           transition-all duration-200 flex items-center gap-2 text-sm
+           active:scale-95 border border-slate-600;
+  }
+
+  .btn-danger {
+    @apply bg-rose-600/20 hover:bg-rose-600/40 text-rose-400 border border-rose-600/30
+           px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 text-sm;
+  }
+
+  .input-field {
+    @apply bg-slate-900/80 border border-slate-700 text-slate-200 rounded-lg px-3 py-2 text-sm
+           focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30
+           transition-all duration-200 placeholder-slate-500;
+  }
+
+  .select-field {
+    @apply input-field cursor-pointer appearance-none;
+  }
+
+  .label {
+    @apply text-slate-400 text-xs font-medium uppercase tracking-wide mb-1 block;
+  }
+
+  .kpi-card {
+    @apply card p-5 relative overflow-hidden;
+  }
+
+  .section-title {
+    @apply font-display text-slate-200 font-bold text-base tracking-tight;
+  }
+
+  .tag-mora {
+    @apply inline-flex items-center gap-1 bg-rose-500/20 text-rose-400 
+           border border-rose-500/30 rounded-full px-2 py-0.5 text-xs font-medium;
+  }
+
+  .tag-ok {
+    @apply inline-flex items-center gap-1 bg-emerald-500/20 text-emerald-400 
+           border border-emerald-500/30 rounded-full px-2 py-0.5 text-xs font-medium;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(244,63,94,0.4); }
+  50%       { box-shadow: 0 0 20px rgba(244,63,94,0.8); }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.animate-stagger > * {
+  opacity: 0;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.animate-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.animate-stagger > *:nth-child(2) { animation-delay: 0.1s; }
+.animate-stagger > *:nth-child(3) { animation-delay: 0.15s; }
+.animate-stagger > *:nth-child(4) { animation-delay: 0.2s; }
+.animate-stagger > *:nth-child(5) { animation-delay: 0.25s; }
+.animate-stagger > *:nth-child(6) { animation-delay: 0.3s; }
+
+.mora-blink {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Tabla */
+.table-row-mora td {
+  background-color: rgba(244, 63, 94, 0.05) !important;
+}
+.table-row-mora:hover td {
+  background-color: rgba(244, 63, 94, 0.10) !important;
+}
+
+/* Grid background del layout */
+.bg-grid {
+  background-image: linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

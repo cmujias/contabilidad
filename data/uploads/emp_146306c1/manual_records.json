@@ -1,0 +1,16 @@
+[
+  {
+    "PROVEEDOR": "CALIBRAR",
+    "FECHA": "2026-03-27",
+    "N° FACTURA": "FAC-PR01",
+    "VALOR BASE": 50000000,
+    "IVA": 0,
+    "RETENCION": 220000,
+    "VALOR A PAGAR": 49780000,
+    "BASE+IVA": 50000000,
+    "NOTAS CREDITO": 0,
+    "PAGO": 30000000,
+    "SALDO": 19780000,
+    "DIAS_MORA": 0
+  }
+]
